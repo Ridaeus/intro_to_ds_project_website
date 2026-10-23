@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Data Analysis Project</title>
+    <title>[Product name] · Navigate unfamiliar indoor spaces</title>
+    <meta name="description" content="[Product name] combines a depth camera with spatial audio to help you find your way in unfamiliar indoor spaces.">
 
     <!-- Bootstrap -->
     <link
@@ -21,16 +22,18 @@
 </head>
 
 
-<body>
+<body id="top">
+
+<a href="#main" class="skip-link">Skip to main content</a>
 
 <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top">
+<nav class="navbar navbar-expand-lg bg-light border-bottom sticky-top" aria-label="Main navigation">
 
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#">
-            YOUR PROJECT
+        <a class="navbar-brand fw-bold" href="#top">
+            [PRODUCT NAME]
         </a>
 
         <button
@@ -38,6 +41,9 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Open menu"
         >
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -47,27 +53,19 @@
             <ul class="navbar-nav ms-auto">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">
-                        About
-                    </a>
+                    <a class="nav-link" href="#problem">The problem</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#results">
-                        Results
-                    </a>
+                    <a class="nav-link" href="#solution">Our solution</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#analysis">
-                        Analysis
-                    </a>
+                    <a class="nav-link" href="#example">An example</a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#conclusion">
-                        Conclusion
-                    </a>
+                    <a class="nav-link" href="#practice">In practice</a>
                 </li>
 
             </ul>
@@ -78,6 +76,8 @@
 
 </nav>
 
+
+<main id="main">
 
 <!-- ================= HERO ================= -->
 
@@ -90,27 +90,28 @@
             <div class="col-lg-7">
 
                 <p class="eyebrow">
-                    DATA ANALYSIS PROJECT
+                    INDOOR NAVIGATION, BY SOUND
                 </p>
 
                 <h1 class="display-1 fw-bold">
-                    Understanding
+                    Hear your way
                     <span class="text-secondary">
-                        our results
+                        through new places
                     </span>
                 </h1>
 
                 <p class="lead text-secondary mt-4">
-                    A simple overview of our analysis,
-                    the key findings, and what they mean
-                    in practice.
+                    Walking into an unfamiliar building can be
+                    disorienting: you don't know where you stand
+                    or where to go. [Product name] gives you a sense
+                    of position and orientation on the go.
                 </p>
 
                 <a
-                    href="#results"
+                    href="#solution"
                     class="btn btn-dark btn-lg mt-3"
                 >
-                    Explore the results →
+                    See how it works →
                 </a>
 
             </div>
@@ -121,16 +122,16 @@
                 <div class="result-card">
 
                     <p class="eyebrow text-light">
-                        KEY RESULT
+                        OUR SOLUTION
                     </p>
 
-                    <div class="display-1 fw-bold">
-                        87%
-                    </div>
+                    <p class="display-4 fw-bold mb-3">
+                        Depth +<br>spatial audio
+                    </p>
 
-                    <p class="text-light-emphasis">
-                        of the analyzed cases were
-                        successfully identified.
+                    <p class="text-light-emphasis mb-0">
+                        A depth camera finds doors and railings
+                        around you. Sound tells you where they are.
                     </p>
 
                 </div>
@@ -144,9 +145,9 @@
 </section>
 
 
-<!-- ================= ABOUT ================= -->
+<!-- ================= THE PROBLEM ================= -->
 
-<section id="about" class="py-5 section-light">
+<section id="problem" class="py-5 section-light">
 
     <div class="container py-5">
 
@@ -155,17 +156,18 @@
             <div class="col-lg-8">
 
                 <p class="eyebrow">
-                    01 — THE PROJECT
+                    01 — THE PROBLEM
                 </p>
 
                 <h2 class="display-4 fw-bold">
-                    What did we investigate?
+                    Unfamiliar indoor spaces are hard to navigate
                 </h2>
 
                 <p class="lead text-secondary mt-4">
-                    We analyzed a dataset to understand
-                    patterns and relationships that can
-                    help us answer our research question.
+                    Who can deny that visiting new places is frustrating
+                    at best, and wholly disorienting at worst? Existing
+                    tools help in their own ways, but none of them give
+                    you spatial awareness.
                 </p>
 
             </div>
@@ -179,17 +181,13 @@
 
                 <div class="info-card h-100">
 
-                    <span class="number">
-                        01
-                    </span>
+                    <span class="number">01</span>
 
-                    <h3>
-                        Our question
-                    </h3>
+                    <h3>Tactile maps</h3>
 
-                    <p>
-                        What patterns can we identify
-                        from the data?
+                    <p class="mb-0">
+                        Helpful, but placed sparingly,
+                        if present at all.
                     </p>
 
                 </div>
@@ -201,18 +199,13 @@
 
                 <div class="info-card h-100">
 
-                    <span class="number">
-                        02
-                    </span>
+                    <span class="number">02</span>
 
-                    <h3>
-                        Our data
-                    </h3>
+                    <h3>Recognition apps</h3>
 
-                    <p>
-                        We analyzed a collection of
-                        observations relevant to our
-                        research question.
+                    <p class="mb-0">
+                        Great at telling you what is nearby, reading
+                        product descriptions and naming people.
                     </p>
 
                 </div>
@@ -224,17 +217,13 @@
 
                 <div class="info-card h-100">
 
-                    <span class="number">
-                        03
-                    </span>
+                    <span class="number">03</span>
 
-                    <h3>
-                        Our goal
-                    </h3>
+                    <h3>What's missing</h3>
 
-                    <p>
-                        Turn the data into useful and
-                        understandable insights.
+                    <p class="mb-0">
+                        Neither is designed to guide you through
+                        buildings and rooms to your destination.
                     </p>
 
                 </div>
@@ -248,159 +237,101 @@
 </section>
 
 
-<!-- ================= RESULTS ================= -->
+<!-- ================= OUR SOLUTION ================= -->
 
-<section id="results" class="py-5 results-section">
+<section id="solution" class="py-5 results-section">
 
     <div class="container py-5">
 
-        <div class="mb-5">
+        <div class="row mb-5">
 
-            <p class="eyebrow">
-                02 — RESULTS
-            </p>
+            <div class="col-lg-8">
 
-            <h2 class="display-4 fw-bold">
-                What did we find?
-            </h2>
+                <p class="eyebrow">
+                    02 — OUR SOLUTION
+                </p>
 
-            <p class="lead text-secondary">
-                The following results summarize the
-                most important findings from our analysis.
-            </p>
+                <h2 class="display-4 fw-bold">
+                    Depth perception meets spatial audio
+                </h2>
 
-        </div>
-
-
-        <!-- STATISTICS -->
-
-        <div class="row g-3 mb-4">
-
-            <div class="col-md-3">
-
-                <div class="stat-card">
-
-                    <p>
-                        Total observations
-                    </p>
-
-                    <strong>
-                        1,248
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-3">
-
-                <div class="stat-card">
-
-                    <p>
-                        Successful results
-                    </p>
-
-                    <strong>
-                        87%
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-3">
-
-                <div class="stat-card">
-
-                    <p>
-                        Categories
-                    </p>
-
-                    <strong>
-                        6
-                    </strong>
-
-                </div>
-
-            </div>
-
-
-            <div class="col-md-3">
-
-                <div class="stat-card">
-
-                    <p>
-                        Average score
-                    </p>
-
-                    <strong>
-                        8.4
-                    </strong>
-
-                </div>
+                <p class="lead text-secondary">
+                    [Product name] uses an infrared depth camera to detect
+                    important landmarks in indoor spaces, such as doors and
+                    railings. It tells you where they are through sound
+                    marks, building the environment around you in sound.
+                </p>
 
             </div>
 
         </div>
 
 
-        <!-- CHART PLACEHOLDERS -->
+        <ol class="row g-3 list-unstyled mb-0">
 
-        <div class="row g-4">
+            <li class="col-md-4">
 
-            <div class="col-lg-6">
+                <div class="step-card h-100">
 
-                <div class="chart-card">
+                    <p>Step 1</p>
 
-                    <p class="eyebrow">
-                        DISTRIBUTION
-                    </p>
+                    <strong>Detect</strong>
 
-                    <h3>
-                        Results over categories
-                    </h3>
-
-                    <div class="chart-placeholder">
-                        Chart goes here
-                    </div>
+                    <span>
+                        The camera spots landmarks like
+                        doors and railings.
+                    </span>
 
                 </div>
 
-            </div>
+            </li>
 
 
-            <div class="col-lg-6">
+            <li class="col-md-4">
 
-                <div class="chart-card">
+                <div class="step-card h-100">
 
-                    <p class="eyebrow">
-                        PERFORMANCE
-                    </p>
+                    <p>Step 2</p>
 
-                    <h3>
-                        Overall performance
-                    </h3>
+                    <strong>Locate</strong>
 
-                    <div class="chart-placeholder">
-                        Chart goes here
-                    </div>
+                    <span>
+                        It works out where each landmark is
+                        and how close it is to you.
+                    </span>
 
                 </div>
 
-            </div>
+            </li>
 
-        </div>
+
+            <li class="col-md-4">
+
+                <div class="step-card h-100">
+
+                    <p>Step 3</p>
+
+                    <strong>Hear</strong>
+
+                    <span>
+                        Each sound mark changes with the
+                        landmark's distance and direction.
+                    </span>
+
+                </div>
+
+            </li>
+
+        </ol>
 
     </div>
 
 </section>
 
 
-<!-- ================= ANALYSIS ================= -->
+<!-- ================= AN EXAMPLE ================= -->
 
-<section id="analysis" class="py-5">
+<section id="example" class="py-5">
 
     <div class="container py-5">
 
@@ -409,26 +340,25 @@
             <div class="col-lg-6">
 
                 <p class="eyebrow">
-                    03 — ANALYSIS
+                    03 — AN EXAMPLE
                 </p>
 
                 <h2 class="display-4 fw-bold">
-                    What do the results mean?
+                    Meeting a friend in a new library
                 </h2>
 
                 <p class="lead text-secondary">
-                    The results show a clear pattern in
-                    the data. The majority of observations
-                    fall into the expected categories,
-                    while a smaller number produce
-                    different results.
+                    Imagine walking into a library you have never
+                    visited. There is no map at the entrance, but you
+                    came prepared: someone mapped out the route for
+                    you beforehand.
                 </p>
 
                 <p class="text-secondary">
-                    This suggests that the patterns
-                    identified in our analysis may be
-                    useful for understanding the problem
-                    we investigated.
+                    After leaving the elevator, you walk straight through
+                    one door. Then you take the first right turn and keep
+                    walking past three meeting cubicles until you reach
+                    the open area, where you will meet your friend.
                 </p>
 
             </div>
@@ -439,14 +369,15 @@
                 <div class="insight-card">
 
                     <p class="eyebrow text-light">
-                        KEY INSIGHT
+                        ALONG THE WAY, [PRODUCT NAME] CONFIRMS
                     </p>
 
-                    <h3>
-                        The most important finding from
-                        our analysis was the strong
-                        difference between the categories.
-                    </h3>
+                    <ol class="route">
+                        <li>You are walking towards a door.</li>
+                        <li>You took the correct right turn.</li>
+                        <li>You just passed the three cubicle doors in a row.</li>
+                        <li>While you wait, the cubicle doors help you tell which way you are facing.</li>
+                    </ol>
 
                 </div>
 
@@ -459,46 +390,129 @@
 </section>
 
 
-<!-- ================= CONCLUSION ================= -->
+<!-- ================= IN PRACTICE ================= -->
 
-<section id="conclusion" class="py-5 conclusion-section">
+<section id="practice" class="py-5 conclusion-section">
 
-    <div class="container py-5 text-center">
+    <div class="container py-5">
 
-        <p class="eyebrow">
-            04 — CONCLUSION
-        </p>
+        <div class="text-center mb-5">
 
-        <h2 class="display-4 fw-bold">
-            So, what did we learn?
-        </h2>
+            <p class="eyebrow">
+                04 — IN PRACTICE
+            </p>
 
-        <p class="lead text-secondary mx-auto conclusion-text">
-            Our analysis demonstrates how data can be
-            used to identify patterns and provide a
-            clearer understanding of the problem.
-        </p>
+            <h2 class="display-4 fw-bold">
+                No new equipment needed
+            </h2>
 
-        <a
-            href="#"
-            class="btn btn-dark btn-lg mt-3"
-        >
-            Back to the beginning ↑
-        </a>
+            <p class="lead text-secondary mx-auto conclusion-text">
+                [Product name] does not exist yet, but it would not need
+                any new hardware. Modern smartphones already have infrared
+                cameras and can run this kind of AI.
+            </p>
+
+        </div>
+
+
+        <ol class="row g-4 list-unstyled">
+
+            <li class="col-md-4">
+
+                <div class="info-card h-100">
+
+                    <span class="number">01</span>
+
+                    <h3>Download the app</h3>
+
+                    <p class="mb-0">
+                        Everything runs on the phone
+                        you already own.
+                    </p>
+
+                </div>
+
+            </li>
+
+
+            <li class="col-md-4">
+
+                <div class="info-card h-100">
+
+                    <span class="number">02</span>
+
+                    <h3>Put on headphones</h3>
+
+                    <p class="mb-0">
+                        High-quality stereo headphones give the best
+                        experience, but budget-friendly ones work well too.
+                    </p>
+
+                </div>
+
+            </li>
+
+
+            <li class="col-md-4">
+
+                <div class="info-card h-100">
+
+                    <span class="number">03</span>
+
+                    <h3>Hold your phone steady</h3>
+
+                    <p class="mb-0">
+                        Point it ahead and let the sound
+                        build the room around you.
+                    </p>
+
+                </div>
+
+            </li>
+
+        </ol>
+
+
+        <details class="tech-note mx-auto mt-5">
+
+            <summary>For the curious: what happens behind the scenes?</summary>
+
+            <p class="mb-0 mt-3">
+                An AI image detection algorithm works together with data
+                from the infrared depth camera. Together they recognise
+                what kind of object is in front of you, where it is,
+                and how close it is.
+            </p>
+
+        </details>
+
+
+        <div class="text-center">
+
+            <a
+                href="#top"
+                class="btn btn-dark btn-lg mt-5"
+            >
+                Back to the beginning ↑
+            </a>
+
+        </div>
 
     </div>
 
 </section>
 
+</main>
+
 
 <!-- ================= FOOTER ================= -->
 
-<footer class="py-4 bg-dark text-secondary">
+<footer class="py-4 bg-dark">
 
     <div class="container">
 
         <small>
-            Data Analysis Project · 2026
+            [Product name] · Introduction to Data Science · 2026
         </small>
 
     </div>
